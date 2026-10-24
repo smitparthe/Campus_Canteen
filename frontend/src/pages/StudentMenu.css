@@ -1,0 +1,438 @@
+/* =========================================
+   STUDENT MENU
+   ========================================= */
+
+.menu-page {
+  min-height: 100vh;
+  background: var(--background);
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.menu-container {
+  width: min(
+    calc(100% - 48px),
+    var(--max-width)
+  );
+
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+
+/* =========================================
+   MENU HEADER
+   ========================================= */
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 45px;
+}
+
+.menu-eyebrow {
+  margin-bottom: 10px;
+
+  color: var(--primary);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.menu-header h1 {
+  margin-bottom: 10px;
+
+  font-size: 42px;
+  letter-spacing: -1px;
+}
+
+.menu-subtitle {
+  font-size: 17px;
+  color: var(--text-secondary);
+}
+
+
+/* =========================================
+   HEADER BADGE
+   ========================================= */
+
+.menu-header-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  padding: 16px 20px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-sm);
+
+  min-width: 230px;
+}
+
+.menu-header-badge > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  background: var(--primary-light);
+
+  border-radius: 12px;
+
+  font-size: 23px;
+}
+
+.menu-header-badge strong {
+  display: block;
+
+  margin-bottom: 2px;
+
+  font-size: 14px;
+}
+
+.menu-header-badge small {
+  color: var(--text-muted);
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   FOOD GRID
+   ========================================= */
+
+.food-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+
+/* =========================================
+   FOOD CARD
+   ========================================= */
+
+.food-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 300px;
+
+  padding: 22px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #d6d3d1;
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================
+   FOOD CARD TOP
+   ========================================= */
+
+.food-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+.food-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  background: var(--primary-light);
+
+  border-radius: 14px;
+
+  font-size: 25px;
+}
+
+.food-category {
+  padding: 6px 10px;
+
+  background: #f5f5f4;
+
+  color: var(--text-secondary);
+
+  border-radius: 999px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   FOOD CONTENT
+   ========================================= */
+
+.food-card-content {
+  flex: 1;
+}
+
+.food-card-content h2 {
+  margin-bottom: 8px;
+
+  font-size: 21px;
+
+  letter-spacing: -0.3px;
+}
+
+.food-description {
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================
+   FOOD CARD BOTTOM
+   ========================================= */
+
+.food-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid var(--border);
+}
+
+.food-price {
+  color: var(--text-primary);
+
+  font-size: 22px;
+  font-weight: 750;
+}
+
+
+/* =========================================
+   ADD TO CART BUTTON
+   ========================================= */
+
+.add-cart-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  background: var(--primary);
+
+  color: white;
+
+  border-radius: var(--radius-sm);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-cart-button span {
+  font-size: 18px;
+
+  line-height: 1;
+}
+
+.add-cart-button:hover {
+  background: var(--primary-dark);
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 4px 10px
+    rgba(232, 93, 4, 0.25);
+}
+
+.add-cart-button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   LOADING / EMPTY STATE
+   ========================================= */
+
+.menu-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 250px;
+
+  padding: 40px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius-lg);
+
+  text-align: center;
+}
+
+.menu-message h2 {
+  margin-bottom: 8px;
+}
+
+.loading-dot {
+  width: 12px;
+  height: 12px;
+
+  margin-bottom: 15px;
+
+  background: var(--primary);
+
+  border-radius: 50%;
+
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
+
+/* =========================================
+   ERROR
+   ========================================= */
+
+.menu-error {
+  padding: 20px;
+
+  background: var(--danger-bg);
+
+  border: 1px solid #fecaca;
+
+  border-radius: var(--radius-md);
+
+  color: var(--danger);
+}
+
+.menu-error strong {
+  display: block;
+
+  margin-bottom: 4px;
+}
+
+.menu-error p {
+  color: var(--danger);
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+  .food-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-header {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu-container {
+    width: min(
+      calc(100% - 24px),
+      var(--max-width)
+    );
+
+    padding-top: 35px;
+  }
+
+  .menu-header {
+    flex-direction: column;
+  }
+
+  .menu-header h1 {
+    font-size: 34px;
+  }
+
+  .menu-header-badge {
+    width: 100%;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+}
