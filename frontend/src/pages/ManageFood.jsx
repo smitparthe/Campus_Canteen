@@ -32,6 +32,10 @@ function ManageFood() {
         "http://localhost:5000/api/food"
       );
 
+
+
+      
+
       const data = await response.json();
 
       if (!response.ok) {
