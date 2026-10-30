@@ -79,7 +79,7 @@ function Cart() {
 
     try {
       const response = await fetch(
-        "http://campus-canteen-1-kr4y.onrender.com/api/orders",
+        "https://campus-canteen-1-kr4y.onrender.com/api/orders",
         {
           method: "POST",
           headers: {

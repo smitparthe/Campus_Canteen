@@ -22,7 +22,7 @@ function StudentHome() {
   async function testBackend() {
     try {
       const response = await fetch(
-        "http://campus-canteen-1-kr4y.onrender.com/api/test"
+        "https://campus-canteen-1-kr4y.onrender.com/api/test"
       );
 
       const data = await response.json();

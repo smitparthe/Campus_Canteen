@@ -18,7 +18,7 @@ function ManageOrders() {
       setError("");
 
       const response = await fetch(
-        "http://campus-canteen-1-kr4y.onrender.com/api/staff/orders"
+        "https://campus-canteen-1-kr4y.onrender.com/api/staff/orders"
       );
 
       const data = await response.json();
@@ -40,7 +40,7 @@ function ManageOrders() {
   async function updateStatus(orderId, newStatus) {
     try {
       const response = await fetch(
-        `http://campus-canteen-1-kr4y.onrender.com/api/staff/orders/${orderId}/status`,
+        `https://campus-canteen-1-kr4y.onrender.com/api/staff/orders/${orderId}/status`,
         {
           method: "PATCH",
 

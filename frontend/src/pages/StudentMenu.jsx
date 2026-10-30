@@ -11,7 +11,7 @@ function StudentMenu() {
     async function fetchFood() {
       try {
         const response = await fetch(
-          "http://campus-canteen-1-kr4y.onrender.com/api/food"
+          "https://campus-canteen-1-kr4y.onrender.com/api/food"
         );
 
         const data = await response.json();

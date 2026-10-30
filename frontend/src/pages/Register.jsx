@@ -19,7 +19,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://campus-canteen-1-kr4y.onrender.com/api/register",
+        "https://campus-canteen-1-kr4y.onrender.com/api/register",
         {
           method: "POST",
           headers: {
