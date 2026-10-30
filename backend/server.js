@@ -156,3 +156,6 @@ app.post("/api/login", (req, res) => {
     }
   });
 });
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Campus Canteen backend running on port ${PORT}`);
+});
