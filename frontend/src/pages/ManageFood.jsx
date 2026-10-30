@@ -29,7 +29,7 @@ function ManageFood() {
       setError("");
 
       const response = await fetch(
-        "http://localhost:5000/api/food"
+        "http://campus-canteen-1-kr4y.onrender.com/api/food"
       );
 
 
@@ -102,8 +102,8 @@ function ManageFood() {
 
     try {
       const url = editingId
-        ? `http://localhost:5000/api/staff/food/${editingId}`
-        : "http://localhost:5000/api/staff/food";
+        ? `http://campus-canteen-1-kr4y.onrender.com/api/staff/food/${editingId}`
+        : "http://campus-canteen-1-kr4y.onrender.com/api/staff/food";
 
       const method = editingId ? "PUT" : "POST";
 
@@ -161,7 +161,7 @@ function ManageFood() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/staff/food/${foodId}`,
+        `http://campus-canteen-1-kr4y.onrender.com/api/staff/food/${foodId}`,
         {
           method: "DELETE"
         }

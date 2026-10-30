@@ -24,7 +24,7 @@ function MyOrders() {
       }
 
       const response = await fetch(
-        `http://localhost:5000/api/orders/${user.id}`
+        `http://campus-canteen-1-kr4y.onrender.com/api/orders/${user.id}`
       );
 
       const data = await response.json();

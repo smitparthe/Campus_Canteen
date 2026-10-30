@@ -15,7 +15,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/login",
+        "http://campus-canteen-1-kr4y.onrender.com/api/login",
         {
           method: "POST",
           headers: {
